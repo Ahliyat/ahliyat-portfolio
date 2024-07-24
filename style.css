@@ -45,6 +45,12 @@ nav {
 nav h3 {
   cursor: pointer;
 }
+
+.navigations span{
+  display: none;
+   font-size: 2rem;
+  color: rgb(225, 149, 190);
+}
 .nav-items {
   display: flex;
   gap: 1rem;
@@ -54,11 +60,7 @@ nav h3 {
   cursor: pointer;
   border-bottom: 1px solid rgb(225, 149, 190);
 }
-.fa-bars {
-  display: none;
-  font-size: 2rem;
-  color: rgb(225, 149, 190);
-}
+
 .nav-btn {
   font-size: 0.8rem;
   padding: 10px;
@@ -142,6 +144,7 @@ nav h3 {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .project {
   max-width: 30%;
@@ -153,10 +156,10 @@ nav h3 {
 }
 .project-title,
 .project-desc {
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 .project-btn {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 /* Project section */
@@ -182,9 +185,9 @@ footer {
 /* footer  */
 
 @media (max-width: 860px) {
-  .fa-bars {
-    display: block;
-  }
+ .navigations span{
+  display: block;
+ }
   .nav-items {
     display: none;
   }
@@ -202,6 +205,12 @@ footer {
   .project {
     max-width: 45%;
   }
+ .project-title{
+  font-size: 1.4rem;
+ }
+.project-desc{
+  font-size: 1.2rem;
+} 
 }
 @media (max-width: 700px) {
   .skills {
