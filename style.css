@@ -8,6 +8,7 @@ body {
   background-color: #1a1a1a;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
 }
 a {
   color: inherit;
@@ -46,9 +47,9 @@ nav h3 {
   cursor: pointer;
 }
 
-.navigations span{
+.navigations span {
   display: none;
-   font-size: 2rem;
+  font-size: 2rem;
   color: rgb(225, 149, 190);
 }
 .nav-items {
@@ -115,6 +116,7 @@ nav h3 {
   /* padding: 5rem; */
   list-style: none;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 .skill {
   display: flex;
@@ -130,7 +132,7 @@ nav h3 {
 
 /* Project section */
 .project-container {
-  padding: 20px 60px;
+  padding: 15px 50px;
 }
 .project-container h2 {
   text-align: center;
@@ -179,23 +181,64 @@ footer {
   display: flex;
   gap: 1rem;
 }
-.social-links:hover{
+.social-links:hover {
   cursor: pointer;
 }
 /* footer  */
-
-@media (max-width: 860px) {
- .navigations span{
-  display: block;
- }
-  .nav-items {
-    display: none;
-  }
+@media (max-width: 1150px) {
   .hero-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding: 15px, 50px;
   }
+  .hero-title {
+    font-size: 40px;
+    max-width: 700px;
+  }
+  .intro {
+    font-size: 1.2rem;
+    max-width: 900px;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 1042px) {
+  .hero-title {
+    max-width: 600px;
+  }
+  .intro {
+    max-width: 800px;
+  }
+}
+@media (max-width: 937px) {
+  .hero-title {
+    max-width: 500px;
+  }
+  .intro {
+    max-width: 700px;
+  }
+}
+@media (max-width: 860px) {
+  /* .skill-container{
+   padding: 15px, 40px;
+  } */
+  .skills {
+    justify-content: center;
+    gap: 5.5rem;
+  }
+  .hero-title {
+    max-width: 450px;
+  }
+  .intro {
+    max-width: 650px;
+  }
+  .navigations span {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+
   .hero-btn {
     max-width: 100%;
   }
@@ -205,24 +248,61 @@ footer {
   .project {
     max-width: 45%;
   }
- .project-title{
-  font-size: 1.4rem;
- }
-.project-desc{
-  font-size: 1.2rem;
-} 
-}
-@media (max-width: 700px) {
-  .skills {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  .project-title {
+    font-size: 1.4rem;
+  }
+  .project-desc {
+    font-size: 1.2rem;
   }
 }
+@media (max-width: 770px) {
+   .skills {
+    justify-content: center;
+    gap: 5rem;
+  }
+  .hero-title {
+    max-width: 400px;
+  }
+  .intro {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .hero-title {
+    max-width: 350px;
+  }
+  .intro {
+    max-width: 550px;
+  }
+  .skills {
+ 
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+ 
+  }
+  .skill-container {
+    padding: 15px, 30px;
+  }
+}
+@media (max-width: 680px) {
+  .hero-title {
+    max-width: 300px;
+  }
+  .intro {
+    max-width: 500px;
+  }
+  .skills{
+    gap: 3rem;
+  }
+  }
 @media (max-width: 650px) {
+   .skills{
+    gap: 2.5rem;
+    
+  }
   .project {
-    max-width: 90%;
+    max-width: 93%;
   }
   .footer-items {
     flex-direction: column;
@@ -230,5 +310,66 @@ footer {
     text-align: center;
     align-items: center;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+   .skills{
+    gap: 2rem;
+    
+  }
+    .hero-title {
+    max-width: 300px;
+  }
+  .intro {
+    max-width: 450px;
+  }
+}
+@media (max-width: 550px) {
+   .skills{
+    gap: 1.2rem;
+    margin:2.5rem ;
+  }
+    .hero-title {
+    max-width: 300px;
+  }
+  .intro {
+    max-width: 450px;
+  }
+}
+@media (max-width: 400px) {
+ .intro {
+    font-size: 1rem;
+   max-width: 100%;
+  
+   }
+  .hero-title{
+    font-size: 2rem;
+  }
+  .skill-title{
+    font-size: 2rem;
+  }
+  button{
+    font-size: .9rem;
+    padding: 10px 10px;
+  }
+ .skill{
+  font-size: 1.5rem;
+ }
+.project-container h2{
+  font-size: 1.5rem;
+ 
+}
+ .project-title{
+    font-size: 1.2rem;
+  }
+  .project-desc{
+    font-size: 1rem;
+  }
+  .footer-items h3{
+    font-size: 1.2rem;
+  }
+  .footer-items span{
+    font-size: 1.2rem;
   }
 }
