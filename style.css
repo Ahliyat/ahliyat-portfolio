@@ -21,7 +21,7 @@ img {
 button {
   max-width: fit-content;
   padding: 15px 25px;
-  background-color:  grgb(225, 149, 190);
+  background-color:  rgb(225, 149, 190);
   color: #fff;
   font-size: 1.1rem;
   border: none;
