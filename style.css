@@ -21,7 +21,7 @@ img {
 button {
   max-width: fit-content;
   padding: 15px 25px;
-  background-color: rgb(225, 149, 190);
+  background-color:  grgb(225, 149, 190);
   color: #fff;
   font-size: 1.1rem;
   border: none;
@@ -132,6 +132,7 @@ nav h3 {
 
 /* Project section */
 .project-container {
+
   padding: 15px 50px;
 }
 .project-container h2 {
@@ -140,17 +141,24 @@ nav h3 {
   margin-top: 3rem;
 }
 .projects {
+max-width: max-content;
+}
+.project {
   display: flex;
+   flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 5rem;
+  max-width: max-content;
+ 
 }
-.project {
+.project-content{
   max-width: 30%;
 }
+
 
 .project img {
   width: 100%;
@@ -185,7 +193,7 @@ footer {
   cursor: pointer;
 }
 /* footer  */
-@media (max-width: 1150px) {
+ @media (max-width: 1150px) {
   .hero-container {
     flex-direction: column-reverse;
     justify-content: center;
@@ -219,9 +227,9 @@ footer {
   }
 }
 @media (max-width: 860px) {
-  /* .skill-container{
+   .skill-container{
    padding: 15px, 40px;
-  } */
+  } 
   .skills {
     justify-content: center;
     gap: 5.5rem;
@@ -256,7 +264,7 @@ footer {
   }
 }
 @media (max-width: 770px) {
-   .skills {
+  .skills {
     justify-content: center;
     gap: 5rem;
   }
@@ -275,11 +283,9 @@ footer {
     max-width: 550px;
   }
   .skills {
- 
     justify-content: center;
     align-items: center;
     gap: 4rem;
- 
   }
   .skill-container {
     padding: 15px, 30px;
@@ -292,14 +298,13 @@ footer {
   .intro {
     max-width: 500px;
   }
-  .skills{
+  .skills {
     gap: 3rem;
   }
-  }
+}
 @media (max-width: 650px) {
-   .skills{
+  .skills {
     gap: 2.5rem;
-    
   }
   .project {
     max-width: 93%;
@@ -314,11 +319,10 @@ footer {
 }
 
 @media (max-width: 575px) {
-   .skills{
+  .skills {
     gap: 2rem;
-    
   }
-    .hero-title {
+  .hero-title {
     max-width: 300px;
   }
   .intro {
@@ -326,11 +330,11 @@ footer {
   }
 }
 @media (max-width: 550px) {
-   .skills{
+  .skills {
     gap: 1.2rem;
-    margin:2.5rem ;
+    margin: 2.5rem;
   }
-    .hero-title {
+  .hero-title {
     max-width: 300px;
   }
   .intro {
@@ -338,38 +342,36 @@ footer {
   }
 }
 @media (max-width: 400px) {
- .intro {
+  .intro {
     font-size: 1rem;
-   max-width: 100%;
-  
-   }
-  .hero-title{
+    max-width: 100%;
+  }
+  .hero-title {
     font-size: 2rem;
   }
-  .skill-title{
+  .skill-title {
     font-size: 2rem;
   }
-  button{
-    font-size: .9rem;
+  button {
+    font-size: 0.9rem;
     padding: 10px 10px;
   }
- .skill{
-  font-size: 1.5rem;
- }
-.project-container h2{
-  font-size: 1.5rem;
- 
-}
- .project-title{
+  .skill {
+    font-size: 1.5rem;
+  }
+  .project-container h2 {
+    font-size: 1.5rem;
+  }
+  .project-title {
     font-size: 1.2rem;
   }
-  .project-desc{
+  .project-desc {
     font-size: 1rem;
   }
-  .footer-items h3{
+  .footer-items h3 {
     font-size: 1.2rem;
   }
-  .footer-items span{
-    font-size: 1.2rem;
+  .footer-items span {
+    font-size: 1rem;
   }
-}
+} 
