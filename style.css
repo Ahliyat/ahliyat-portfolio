@@ -217,6 +217,9 @@ footer {
   .intro {
     max-width: 800px;
   }
+  .project-content{
+  max-width: 45%;
+}
 }
 @media (max-width: 937px) {
   .hero-title {
@@ -253,9 +256,9 @@ footer {
   .right-container img {
     border-radius: 50%;
   }
-  .project {
+  /* .project {
     max-width: 45%;
-  }
+  } */
   .project-title {
     font-size: 1.4rem;
   }
@@ -301,14 +304,15 @@ footer {
   .skills {
     gap: 3rem;
   }
+
 }
 @media (max-width: 650px) {
   .skills {
     gap: 2.5rem;
   }
-  .project {
-    max-width: 93%;
-  }
+  .project-content{
+  max-width: 90%;
+}
   .footer-items {
     flex-direction: column;
     justify-content: center;
