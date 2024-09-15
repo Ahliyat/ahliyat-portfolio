@@ -2,10 +2,10 @@ let projectDetail = document.getElementById("project");
 const data = [
   {
     id: 1,
-    img: "./assets/images/portfolio img.jpg",
-    title: "Lorem, ipsum dolor.",
+    img: "./assets/images/DMS-picture.PNG",
+    title: "Delivery Management Service",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptates inventore dolore animi vero cumque! ",
+      " DMS helps you to manage your rides and deliveries effectively whether as a logistics company or as a regular local business that needs a reliable delivery system ",
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const fetchProjects = () => {
             <p class="project-desc">
             ${project.description} 
             </p>
-            <button class="project-btn">View Project</button>
+            <button type="button" class="project-btn">View Project</button>
           </section>
      `;
   });

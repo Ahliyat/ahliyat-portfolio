@@ -266,19 +266,34 @@ footer {
     gap: 5rem;
   }
   .hero-title {
-    max-width: 400px;
+    max-width: 90%;
+ 
   }
   .intro {
-    max-width: 600px;
+    max-width: 90%;
+
   }
+  .intro p {
+    align-items: center;
+
+  }
+  .left-container{
+   align-items: center;
+  }
+  button{
+  width: 100%;
+}
+.project-btn{
+  max-width: 100%;
+}
 }
 @media (max-width: 700px) {
-  .hero-title {
+  /* .hero-title {
     max-width: 350px;
   }
   .intro {
     max-width: 550px;
-  }
+  } */
   .skills {
     justify-content: center;
     align-items: center;
@@ -287,12 +302,12 @@ footer {
  
 }
 @media (max-width: 680px) {
-  .hero-title {
+  /* .hero-title {
     max-width: 300px;
   }
   .intro {
     max-width: 500px;
-  }
+  } */
   .skills {
     gap: 3rem;
   }
@@ -311,30 +326,33 @@ footer {
     align-items: center;
     gap: 1rem;
   }
+  .hero-title{
+     font-size: 2rem;
+  }
 }
 
 @media (max-width: 575px) {
   .skills {
     gap: 2rem;
   }
-  .hero-title {
+  /* .hero-title {
     max-width: 300px;
-  }
-  .intro {
-    max-width: 450px;
-  }
+  } */
+  /* .intro {
+    max-width: 90%;
+  } */
 }
 @media (max-width: 550px) {
   .skills {
     gap: 1.2rem;
     margin: 2.5rem;
   }
-  .hero-title {
-    max-width: 300px;
+  /* .hero-title {
+    max-width: 90%;
   }
   .intro {
-    max-width: 450px;
-  }
+    max-width: 90%;
+  } */
   nav {
     padding: 15px 20px;
   }
@@ -348,10 +366,15 @@ footer {
   padding: 15px 20px;
 }
 }
+@media (max-width: 470px) {
+   .hero-title{
+     font-size: 1.8rem;
+  }
+}
 @media (max-width: 400px) {
   .intro {
     font-size: 1rem;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
   .hero-title {
     font-size: 2rem;
@@ -382,4 +405,10 @@ footer {
   .footer-items span {
     font-size: 1rem;
   }
+}
+@media (max-width: 299px) {
+   .hero-title{
+     font-size: 1.6rem;
+  }
+
 }
