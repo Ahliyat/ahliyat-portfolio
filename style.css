@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -36,12 +38,18 @@ button:hover {
 /* header */
 header {
   border-bottom: 3px solid rgb(225, 149, 190);
+  position: sticky;
+  top: 0;
+
 }
-nav {
+.navigations {
+  
   display: flex;
   justify-content: space-between;
   padding: 15px 40px;
   align-items: center;
+  position: relative;
+  background-color: #1a1a1a;
 }
 nav h3 {
   cursor: pointer;
@@ -158,6 +166,7 @@ nav h3 {
 }
 
 .project img {
+  display: flex;
   width: 100%;
   max-height: 200px;
 }
@@ -239,11 +248,31 @@ footer {
   }
   .navigations span {
     display: block;
+   
+  }
+  .nav-btn{
+     align-self: start;
   }
   .nav-items {
-    display: none;
-  }
+   position: absolute;
+   top: 60px;
+left: 0px;
+width: 100%;
+ max-height: 0;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ background-color: #1a1a1a;
+ transition: all 0.3s linear;
+ padding: 10px 40px;
 
+  }
+.nav-item{
+align-self: start;
+}
+.show{
+  max-height: 300px ;
+}
   .hero-btn {
     max-width: 100%;
   }
