@@ -1,12 +1,20 @@
 let projectDetail = document.getElementById("project");
 
 let copyrightYear = document.getElementById("copyright");
-const menuToggle = document.getElementById("fa-bars")
-const navItems = document.getElementById("nav-items")
+const menuToggle = document.getElementById("fa-bars");
+const navItems = document.getElementById("nav-items");
+const navItem = document.querySelectorAll(".nav-items a");
 
-menuToggle.addEventListener("click", function() {
-  navItems.classList.toggle("show")
-})
+console.log(navItem);
+menuToggle.addEventListener("click", function () {
+  navItems.classList.toggle("show");
+});
+
+navItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    navItems.classList.remove("show");
+  });
+});
 const data = [
   {
     id: 1,
@@ -44,32 +52,7 @@ const data = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptates inventore dolore animi vero cumque! ",
   },
 ];
-const data2 = [
-  {
-    id: 1,
-    text: "2024 Ahliyat",
-  },
-  {
-    id: 1,
-    text: "2025 Ahliyat",
-  },
-  {
-    id: 1,
-    text: "2026 Ahliyat",
-  },
-  {
-    id: 1,
-    text: "2027 Ahliyat",
-  },
-  {
-    id: 1,
-    text: "2028 Ahliyat",
-  },
-  {
-    id: 1,
-    text: "2029 Ahliyat",
-  },
-];
+
 console.log(data);
 const fetchProjects = () => {
   let projects = "";
@@ -101,16 +84,6 @@ const fetchProjects = () => {
 
 fetchProjects();
 
-const year = () => {
-  let yearChange = "";
-  data2.map(
-    new Date().getFullYear((copyright) => {
-      yearChange += `
-                <span id="copyright">${copyright.text
-                } </span>
-     `;
-    })
-  );
-};
-year();
+const copyYear = new Date().getFullYear()
+copyrightYear.textContent = copyYear
 fetchProjects();
